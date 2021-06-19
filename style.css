@@ -1,0 +1,568 @@
+body {
+    font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .8px;
+    color: #333;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.next {
+  color: white;
+  display: block;
+  width: 200px;
+  border: solid 1px white;
+}
+
+.next:hover {
+  color: rgb(27, 27, 27);
+  background-color: whitesmoke;
+}
+
+/* ------------------------- 
+ヘッダー
+---------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 120;
+  width: 100%;
+  height: auto;
+}
+
+.header li {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.fas {
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-2x {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: -45px;
+  display: none;
+}
+
+.left-list li {
+  float: left;
+}
+
+.right-list li {
+  float: right;
+}
+
+.recruit {
+  border: solid 3px black;
+  padding: 5px 25px;
+}
+
+.recruit:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact {
+  margin-right: 30px;
+  border: solid 3px black;
+  padding: 5px 25px;
+}
+
+.contact:hover {
+  background-color: black;
+  color: white;
+}
+
+.farm-name {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.farm-name h2 {
+  margin-top: -15px;
+}
+
+.farm-img {
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-image: url('img/horse1.jpg');
+}
+
+/* ------------------------- 
+FARM MODAL
+---------------------------- */
+#farm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: greenyellow;
+  display: none;
+}
+
+.modal-list {
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.modal-item {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.modal-list a {
+  color: white
+}
+
+.modal-list li {
+  padding-bottom: 10px;
+}
+
+/* ------------------------- 
+RECENT WINNERS
+---------------------------- */
+.winners {
+  margin: 100px  0;
+}
+
+.winner-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.winner-content {
+  display: flex;
+}
+
+.winner-item {
+  margin: 0 100px;
+}
+
+.winner-item p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.more-winners {
+  width: 100%;
+  margin-top: 80px;
+  font-size: 15px;
+}
+
+.more-winners a{
+  display: block;
+  margin: 0 auto;
+  border: solid 1px grey;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.more-winners p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.more-winners a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.more-results {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.results-up {
+  display: inline-block;
+  transition: all .3s ease 0s;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  width: 800px;
+  border-radius: 2px;
+  background-color: rgb(238, 79, 79);
+}
+
+.results-up:hover h2{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.results-up:hover h4{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.more-results h2 {
+  padding-top: 5px;
+  margin-bottom: -10px;
+}
+
+.more-results h4 {
+  margin-top: -15px;
+}
+
+/* ------------------------- 
+競争成績
+---------------------------- */
+.race-results {
+  margin-top: -20px;
+  height: 600px;
+  background-size: cover;
+  background-image: url('img/horse4.jpg');
+}
+
+.results-title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.results-title h1 {
+  margin-bottom: -60px;
+}
+
+.results-title h3 {
+  font-size: 16px;
+}
+
+.results-next {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 400px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.results-next a {
+  margin: 0 auto;
+}
+
+.results-next h2 {
+  margin: -5px -5px;
+}
+
+/* ------------------------- 
+ABOUT US
+---------------------------- */
+.about-us {
+  margin-top: -10px;
+  background-size: cover;
+  height: 700px;
+  background-image: url('img/horse7.jpg');
+}
+
+.about-title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+.about-title h3 {
+  font-size: 16px;
+  margin-top: -40px;
+}
+
+.about-lists {
+  margin-top: 550px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.about-lists ul {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.about-lists a {
+  color: white;
+  padding: 5px 40px;
+  margin: 0 10px;
+  border: 1px solid white;
+}
+
+.about-lists a:hover {
+  color: rgb(27, 27, 27);
+  background-color: whitesmoke;
+}
+
+/* ------------------------- 
+FARM HISTORY
+---------------------------- */
+.farm-history {
+  margin-top: 15px;
+  height: 950px;
+  background-size: cover;
+  background-image: url('img/horse8.jpg');
+}
+
+.history-title {
+  color: white;
+  padding-top: 200px;
+  width: 600px;
+  text-align: center;
+}
+
+.history-title h2 {
+  font-size: 40px;
+}
+
+.history-title h4 {
+  font-size: 20px;
+  margin-top: -40px;
+}
+
+.history-next {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 200px;
+  font-weight: bold;
+}
+
+/* ------------------------- 
+FARM RECRUIT
+---------------------------- */
+.farm-recruit {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.recruit-title {
+  font-size: 30px;
+}
+
+.recruit-lists {
+  font-size: 20px;
+}
+
+.recruit-item {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.item-content {
+  margin-left: 150px;
+}
+
+.letters-2 {
+  margin-left: 190px;
+}
+
+.letters-3 {
+  margin-left: 170px;
+}
+
+.recruit-form {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.recruit-form a {
+  color: #333;
+  display: block;
+  width: 1000px;
+  padding: 5px 0;
+  margin: 0 auto;
+  border: solid 1px #333;
+}
+
+.recruit-form a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* ------------------------- 
+FARM CONTACT
+---------------------------- */
+.farm-contact {
+  margin-top: 10px;
+  height: 700px;
+  background-size: cover;
+  background-image: url('img/horse9.jpg');
+  text-align: center;
+}
+
+.contact-title {
+  width: 800px;
+  padding-top: 40px;
+  color: white;
+  margin: 0 auto;
+}
+
+.contact-title h2 {
+  font-size: 50px;
+}
+
+.contact-title h4 {
+  margin-top: -50px;
+  font-size: 15px;
+}
+
+.contact-form {
+  display: block;
+  padding-top: 50px;
+}
+
+.contact-form a {
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  margin: 0 auto;
+  padding: 30px 70px;
+  width: 250px;
+}
+
+.contact-form a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* ------------------------- 
+WITH OUR HORSE
+---------------------------- */
+.with-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.horse-details {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.detail-item {
+  margin: 0 auto;
+}
+
+.detail-item p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 0;
+  margin-top: -10px;
+  background-color: rgb(110, 52, 4);
+}
+
+.gallery {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.gallery-content a {
+  padding: 20px 335px;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: #333;
+}
+
+.gallery-content h2 {
+  font-size: 50px;
+}
+
+.gallery-content h4 {
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+.recruit-info {
+  margin-bottom: 100px;
+}
+
+.recruit-info-content a {
+  padding: 5px 335px;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: teal;
+}
+
+.recruit-info-content h2 {
+  font-size: 50px;
+}
+
+.farst-info {
+  margin-left: 725px;
+}
+
+.second-info {
+  margin-left: 700px;
+  margin-top: -70px;
+}
+
+.recruit-info-content h4 {
+  font-size: 20px;
+  margin-left: 850px;
+  margin-top: -50px;
+}
+
+/* ------------------------- 
+Footer
+---------------------------- */
+.footer {
+  padding: 20px;
+  background-color: rgb(105, 105, 105);
+  color: white;
+}
+
+.farm-list {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.farm-list ul {
+  display: flex;
+}
+
+.farm-list li {
+  margin: 0 15px;
+}
+
+.farm-list a {
+  color: white;
+  font-weight: bold;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
