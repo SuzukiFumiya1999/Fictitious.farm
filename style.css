@@ -1,0 +1,938 @@
+body {
+    font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .8px;
+    color: #333;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.next {
+  color: white;
+  display: block;
+  width: 200px;
+  border: solid 1px white;
+}
+
+.next:hover {
+  color: rgb(27, 27, 27);
+  background-color: whitesmoke;
+}
+
+/* ------------------------- 
+ヘッダー
+---------------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 120;
+  width: 100%;
+  height: auto;
+}
+
+.header li {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.fas {
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-2x {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: -45px;
+  display: none;
+}
+
+.left-list li {
+  float: left;
+}
+
+.right-list li {
+  float: right;
+}
+
+.recruit {
+  border: solid 3px black;
+  padding: 5px 25px;
+}
+
+.recruit:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact {
+  margin-right: 30px;
+  border: solid 3px black;
+  padding: 5px 25px;
+}
+
+.contact:hover {
+  background-color: black;
+  color: white;
+}
+
+.farm-name {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.farm-name h2 {
+  margin-top: -15px;
+}
+
+.farm-img {
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-image: url('img/horse1.jpg');
+}
+
+/* ------------------------- 
+FARM MODAL
+---------------------------- */
+#farm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: greenyellow;
+  display: none;
+}
+
+.modal-list {
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.modal-item {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.modal-list a {
+  color: white
+}
+
+.modal-list li {
+  padding-bottom: 10px;
+}
+
+/* ------------------------- 
+RECENT WINNERS
+---------------------------- */
+.winners {
+  margin: 100px  0;
+}
+
+.winner-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.winner-content {
+  display: flex;
+}
+
+.winner-item {
+  margin: 0 100px;
+}
+
+.winner-item img {
+  width: 100%;
+}
+
+.winner-item p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.more-winners {
+  width: 100%;
+  margin-top: 80px;
+  font-size: 15px;
+}
+
+.more-winners a{
+  display: block;
+  margin: 0 auto;
+  border: solid 1px grey;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.more-winners p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.more-winners a:hover {
+  background-color: grey;
+  color: white;
+}
+
+.more-results {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.results-up {
+  display: inline-block;
+  transition: all .3s ease 0s;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  width: 800px;
+  border-radius: 2px;
+  background-color: rgb(238, 79, 79);
+}
+
+.results-up:hover h2{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.results-up:hover h4{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.more-results h2 {
+  padding-top: 5px;
+  margin-bottom: -10px;
+}
+
+.more-results h4 {
+  margin-top: -15px;
+}
+
+/* ------------------------- 
+競争成績
+---------------------------- */
+.race-results {
+  margin-top: -20px;
+  height: 600px;
+  background-size: cover;
+  background-image: url('img/horse4.jpg');
+}
+
+.results-title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.results-title h1 {
+  margin-bottom: -60px;
+}
+
+.results-title h3 {
+  font-size: 16px;
+}
+
+.results-next {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 400px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.results-next a {
+  margin: 0 auto;
+}
+
+.results-next h2 {
+  margin: -5px -5px;
+}
+
+/* ------------------------- 
+ABOUT US
+---------------------------- */
+.about-us {
+  margin-top: -10px;
+  background-size: cover;
+  height: 700px;
+  background-image: url('img/horse7.jpg');
+}
+
+.about-title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+.about-title h3 {
+  font-size: 16px;
+  margin-top: -40px;
+}
+
+.about-lists {
+  margin-top: 550px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.about-lists ul {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.about-lists a {
+  color: white;
+  padding: 5px 40px;
+  margin: 0 10px;
+  border: 1px solid white;
+}
+
+.about-lists a:hover {
+  color: rgb(27, 27, 27);
+  background-color: whitesmoke;
+}
+
+/* ------------------------- 
+FARM HISTORY
+---------------------------- */
+.farm-history {
+  margin-top: 15px;
+  height: 950px;
+  background-size: cover;
+  background-image: url('img/horse8.jpg');
+  text-align: center;
+  color: white;
+}
+
+.history-title {
+  width: 600px;
+  font-size: 35px;
+}
+
+.history-title-1 {
+  padding-top: 200px;
+}
+
+.history-title-2 {
+  margin-top: -50px;
+}
+
+.history-title h4 {
+  font-size: 20px;
+  margin-top: -40px;
+}
+
+.history-next {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 200px;
+  font-weight: bold;
+}
+
+/* ------------------------- 
+FARM RECRUIT
+---------------------------- */
+.farm-recruit {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.recruit-title {
+  font-size: 30px;
+}
+
+.recruit-lists {
+  font-size: 20px;
+}
+
+.recruit-item {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.item-content {
+  padding-left: 150px;
+}
+
+.letters-2 {
+  padding-left: 190px;
+}
+
+.letters-3 {
+  padding-left: 170px;
+}
+
+.recruit-form {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.recruit-form a {
+  color: #333;
+  display: block;
+  width: 1000px;
+  padding: 5px 0;
+  margin: 0 auto;
+  border: solid 1px #333;
+}
+
+.recruit-form a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* ------------------------- 
+FARM CONTACT
+---------------------------- */
+.farm-contact {
+  margin-top: 10px;
+  height: 700px;
+  background-size: cover;
+  background-image: url('img/horse9.jpg');
+  text-align: center;
+}
+
+.contact-title {
+  width: 800px;
+  padding-top: 40px;
+  color: white;
+  margin: 0 auto;
+}
+
+.contact-title h2 {
+  font-size: 50px;
+}
+
+.contact-title h4 {
+  margin-top: -50px;
+  font-size: 15px;
+}
+
+.contact-form {
+  display: block;
+  padding-top: 50px;
+}
+
+.contact-form a {
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  margin: 0 auto;
+  padding: 30px 70px;
+  width: 250px;
+}
+
+.contact-form a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* ------------------------- 
+WITH OUR HORSE
+---------------------------- */
+.with-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.horse-details {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.detail-item {
+  margin: 0 auto;
+}
+
+.detail-item p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 0;
+  margin-top: -10px;
+  background-color: rgb(110, 52, 4);
+}
+
+.gallery {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.gallery-content a {
+  padding: 20px 335px;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: #333;
+}
+
+.gallery-content h2 {
+  font-size: 50px;
+}
+
+.gallery-content h4 {
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+.recruit-info {
+  margin-bottom: 100px;
+}
+
+.recruit-info-content a {
+  padding: 5px 335px;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: teal;
+}
+
+.recruit-info-content h2 {
+  font-size: 50px;
+}
+
+.farst-info {
+  margin-left: 725px;
+  margin-top: 0px;
+}
+
+.second-info {
+  margin-left: 700px;
+  margin-top: -70px;
+}
+
+.recruit-info-content h4 {
+  font-size: 20px;
+  margin-left: 850px;
+  margin-top: -50px;
+}
+
+/* ------------------------- 
+Footer
+---------------------------- */
+.footer {
+  padding: 20px;
+  background-color: rgb(105, 105, 105);
+  color: white;
+}
+
+.farm-list {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.farm-list ul {
+  display: flex;
+}
+
+.farm-list li {
+  margin: 0 15px;
+}
+
+.farm-list a {
+  color: white;
+  font-weight: bold;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*media Queries 750
+----------------------------------------------------*/
+@media screen and (max-width: 750px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+    width: 100%;
+    overflow-x: hidden;
+	  overflow-y: scroll;
+	  -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  .next {
+    width: 50%;
+  }
+
+  /* ヘッダー　*/
+  header li {
+    padding-left: -15px;
+  }
+
+  .fas {
+    margin-left: -30px;
+  }
+
+  .fa-2x {
+    margin-left: -50px;
+  }
+
+  .header-home {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .recruit {
+    display: none;
+  }
+
+  .farm-name {
+    width: 50%;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: -10px;
+  }
+
+  /* モーダル */
+  .modal-item {
+    font-size: 15px;
+  }
+
+
+  /* ファームimg */
+  .farm-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -50px;
+  }
+
+  /* RECENT RESULTS */
+  .winner-content {
+    margin-top: -60px;
+    display: block;
+    margin-bottom: -50px;
+  }
+
+  .winner-title {
+    font-size: 10px;
+  }
+
+  .winner-item {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .winner-item img {
+    margin-bottom: 15px;
+  }
+
+  .winner-item p {
+    font-size: 12px;
+    margin-top: -15px;
+  }
+
+  .results-up {
+    width: 300px;
+  }
+
+  .more-results {
+    margin-bottom: -70px;
+  }
+
+  /* 競争成績　*/
+  .race-results {
+    background-size: cover;
+    background-position: 35% 50%;
+    height: 320px;
+    background-repeat: no-repeat;
+  }
+
+  .results-title {
+    font-size: 13px;
+  }
+
+  .results-title h3 {
+    padding-top: 15px;
+  }
+
+  .results-next {
+    margin-top: 200px;
+  }
+
+  /* ABOUT US */
+  .about-us {
+    background-size: cover;
+    height: 450px;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .about-title {
+    font-size: 15px;
+  }
+
+  .about-title h3 {
+    padding-top: 5px;
+  }
+
+  .about-lists ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto; 
+  }
+
+  .about-lists li {
+    flex: auto;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+
+  .about-lists {
+    margin-top: 300px;
+    margin-left: 0px;
+  }
+
+  .about-lists a {
+    font-size: 12px;
+    padding: 5px 30px;
+  }
+
+  /* FARM HISTORY */
+  .farm-history {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    height: 400px;
+  }
+
+  .history-title {
+    width: 100%;
+    padding-top: 5px;
+    margin-left: -20%;
+  }
+
+  .history-title h2 {
+    font-size: 25px;
+  }
+
+  .history-title-1 {
+    padding-top: 0px;
+  }
+
+  .history-title-2 {
+    padding-top: 20px;
+  }
+
+  .history-title h4 {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .history-next {
+    width: 50%;
+  }
+
+  .history-next a {
+    margin-top: -10px;
+    margin-left: -120px;
+  }
+
+
+
+  /* 求人情報　*/
+  .farm-recruit {
+    width: 80%;
+  }
+
+  .recruit-title {
+    font-size: 20px;
+  }
+
+  .recruit-lists {
+    font-size: 15px;
+  }
+
+  .item-content {
+    padding-left: 50px;
+  }
+
+  .recruit-item {
+    padding-left: 7.5em;
+    text-indent: -7.5em;
+  }
+
+  .letters-3 {
+    padding-left: 65px;
+  }
+
+  .letters-2 {
+    padding-left: 80px;
+  }
+
+  .recruit-form {
+    margin-top: 30px;
+  }
+
+  .recruit-form a {
+    width: 80%;
+  }
+
+  /* お問い合わせ */
+  .farm-contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    height: 450px;
+  }
+
+  .contact-title {
+    width: 70%;
+    margin-bottom: 170px;
+  }
+
+  .contact-title h2 {
+    font-size: 20px;
+  }
+
+  .contact-title h4 {
+    font-size: 10px;
+    padding-top: 40px;
+  }
+
+  .contact-form {
+    font-size: 15px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .contact-form a {
+    padding: 10px 20px;
+  }
+
+  /* WITH OUR HORSE */
+  .with-title h2 {
+    font-size: 25px;
+  }
+
+  .horse-details {
+    display: block;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .detail-item {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .detail-item img {
+    width: 100%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery-content a {
+    padding: 40px 0;
+    width: 90%;
+  }
+
+  .gallery-content h2 {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+
+  .gallery-content h4 {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .recruit-info {
+    width: 100%;
+  }
+
+  .recruit-info-content a {
+    padding-top: -40px;
+    padding-right: 180px;
+    padding-left: 60px;
+    width: 90%;
+  }
+
+  .recruit-info-content h2 {
+    font-size: 20px;
+  }
+
+  .farst-info {
+    margin-left: 100px;
+    padding-top: 50px;
+  }
+
+  .second-info {
+    margin-left: 100px;
+    margin-top: -20px;
+    margin-bottom: -100px;
+  }
+
+  /* フッター */
+  .farm-list {
+    width: 100%;
+    padding-left: -30px;
+  }
+
+  .farm-list a {
+    font-size: 10px;
+  }
+
+  .farm-list ul {
+    flex-wrap: wrap;
+  }
+
+  .farm-list li {
+    flex: auto;
+    width: 30%;
+    margin: 0 5px;
+  }
+}
